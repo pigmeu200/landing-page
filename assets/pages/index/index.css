@@ -1,0 +1,11 @@
+ /*importar o global*/
+
+@import '../../global/global.css';
+
+/*importar o partials de css*/
+
+@import './partials/footer.css';
+@import './partials/nav.css';
+@import './partials/section-compra.css';
+@import './partials/section-itens.css';
+@import './partials/section-topo.css';

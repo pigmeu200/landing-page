@@ -1,0 +1,51 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#090d1786;
+    backdrop-filter: blur(20px); /* tem a funcao de deixar a imagem com blur*/
+    -webkit-backdrop-filter: blur(20px); /* tem a funcao de deixar a imagem com blur em iphone*/
+    padding: 20px 60px; /* ordem  emcima, direita, em baixo , esquerda*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+nav h2.logo {
+    font-family: var(--bold);
+    color: var(--color-white);
+    letter-spacing:  10px;
+}
+
+nav .opcoes a {
+    font-family: var(--regular);
+    font-size: 0.9rem;
+    color: var(--color-white);
+    text-decoration: none;
+    margin: 0 0 0 25px;
+    transition: all 0.3s;
+}
+nav .opcoes a:hover {
+    opacity: 0.5;
+}
+nav .opcoes a.destaque {
+    font-family: var(--bold);
+    color: var(--color-blue2);
+}
+
+/* responsivo para por pro celular */
+
+@media screen and (max-width: 1000px) {
+    nav {
+
+        padding: 20px 20px; /* ordem  emcima, direita, em baixo , esquerda*/
+
+    }
+    nav .opcoes a {
+       display: none;
+    }
+    nav .opcoes a.destaque {
+        display: flex;
+    }
+}

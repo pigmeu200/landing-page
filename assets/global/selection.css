@@ -1,0 +1,7 @@
+
+/* serve para dizer qual sera a coloracao das selections do site msm que eu irei mudar no html */
+
+::selection{
+    color: var(--color-white);
+    background-color: var(--color-blue);
+}

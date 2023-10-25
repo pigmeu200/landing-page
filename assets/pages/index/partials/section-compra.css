@@ -1,0 +1,108 @@
+section.compra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 80px;
+    position: relative;
+    overflow: hidden;
+
+}
+section.compra img.logo {
+    width: 100%;
+    max-width: 300px;
+}
+
+section.compra .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 500px;
+    padding: 0 0 0 50px;
+}
+
+section.compra .texto a {
+    font-family: var(--bold);
+    font-size: 1.2rem;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    text-decoration: none;
+    padding: 15px 50px;
+    border-radius: 50px;
+    transition: all 0.3s;
+    z-index: 2;
+}
+section.compra .texto a:hover {
+    color: var(--color-blue);
+    background-color: var(--color-white);
+
+}
+section.compra .texto h2 {
+    font-family: var(--bold);
+    font-size: 2rem;
+    color: var(--color-white);
+    line-height: 1.2;
+    z-index: 2;
+}
+section.compra .texto p {
+    font-family: var(--regular);
+    font-size: 1rem;
+    color: var(--color-white);
+    line-height: 1.5;
+    z-index: 2;
+    margin: 15px 0 20px 0;
+}
+section.compra .texto h2 span {
+    color: var(--color-blue);
+
+}
+section.compra img.circulo {
+    
+    position: absolute;
+    z-index: 1;
+    top: -650px;
+    left: -500px;
+    animation: girarcirculocompra 15s linear infinite;
+}
+@keyframes girarcirculocompra { /* faz a imagem rodar em 360 graus*/
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+/* responsivo para por pro celular */
+
+@media screen and (max-width: 1000px) {
+    section.compra {
+        flex-direction: column;
+        padding: 60px 20px;
+    }
+    section.compra img.logo {
+        width: 100%;
+        max-width: 150px;
+    }
+    
+    section.compra .texto {
+        align-items: center;
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+    
+    section.compra .texto h2 {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+   
+    section.compra .texto h2 span {
+        color: var(--color-green);
+    
+    }
+    section.compra img.circulo {
+        top: -750px;
+        left: -600px;
+    }
+}

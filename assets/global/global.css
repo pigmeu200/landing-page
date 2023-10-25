@@ -1,0 +1,5 @@
+@import './fonts.css'; /* @import serve para importar  NA PASTA GLOBAL IREI PURAR TODOS OS STYLE PARA DPS JOGA EM STYLE*/
+@import './normalize.css';
+@import './scrollbar.css';
+@import './selection.css';
+@import './variables.css';

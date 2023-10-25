@@ -1,0 +1,16 @@
+/* serve para mudar a parte o scrollbar a q rola a pagem seguir esse padrao*/
+
+::-webkit-scrollbar {
+    background-color: var(--color-black); /*  var(--color-red) foi uma variavel que criei pra acelerar o percurso*/
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(25, 21, 255, 0.329);
+}
+::-webkit-scrollbar-button {
+    background-color: rgba(25, 21, 255, 0.329);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: var(--color-black);
+}

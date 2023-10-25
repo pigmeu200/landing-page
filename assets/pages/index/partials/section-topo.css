@@ -1,0 +1,102 @@
+section.topo {
+    display: flex;
+    flex-direction: column; /* column fica igual uma coluna um em baixo do outro*/
+    align-items: center;
+    justify-content: center;
+    padding: 100px 80px;
+    position: relative;
+    overflow: hidden;
+
+}
+section.topo img.circulo {
+    position: absolute;
+    z-index: 1;
+    animation: girarcirculo 15s linear infinite;
+}
+@keyframes girarcirculo { /* faz a imagem rodar em 360 graus*/
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+section.topo img.circulo.um {
+    top: -650px;
+    left: -500px;
+    z-index: 2; /* orden dos elementos quao maior o z-index por cima ele vai ficar*/
+
+}
+section.topo img.circulo.dois {
+    bottom: -500px;
+    right: -300px;
+    opacity: 0.5;
+
+
+}
+section.topo iframe{
+    margin: 30px 0;
+    width: 100%;
+    max-width: 640px;
+    height: 360px;
+    border-radius: 20px;
+}
+section.topo h1 {
+    font-family: var(--bold);
+    font-size: 2rem;
+    color: var(--color-white);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.2;
+    z-index: 2;
+}
+section.topo h1 span {
+    color: var(--color-blue);
+
+}
+section.topo a {
+    font-family: var(--bold);
+    font-size: 1.2rem;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    text-decoration: none;
+    padding: 15px 50px;
+    border-radius: 50px;
+    transition: all 0.3s;
+    z-index: 2;
+}
+section.topo a:hover {
+    color: var(--color-blue);
+    background-color: var(--color-white);
+
+}
+/* responsivo para por pro celular */
+
+@media screen and (max-width: 1000px) {
+    section.topo {
+        padding: 100px 20px 60px;  
+    }
+    section.topo img.circulo.um {
+        top: -750px;
+        left: -600px;
+    }
+    section.topo img.circulo.dois {
+        bottom: -700px;
+        right: -500px;
+    }
+    section.topo iframe{
+        max-width: 320px;
+        height: 180px;
+        border-radius: 10px;
+    }
+    section.topo h1 {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+    section.topo h1 span {
+        color: var(--color-red);
+    
+    }
+}

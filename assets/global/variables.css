@@ -1,0 +1,15 @@
+:root {
+    --color-red: #FC0021; /* isso serve como uma variavel basta eu mudar aki para mudar todos q estejam com a coloracao vermelha escrita --cor-vermelho e assim sucessivamente*/
+    --color-blue: #2c2cff; 
+    --color-blue2: #1437ff; 
+    --color-purple: #a84aff; 
+    --color-purple2: #590ea085; 
+    --color-black: #090D17;
+    --color-white: #FFFFFF;
+    --color-green: #30AA68;
+    --color-gray: #141927;
+
+    --regular: 'mark-pro-regular';
+    --bold: 'mark-pro-bold';
+}
+

@@ -1,0 +1,15 @@
+/*SEVE PARA ZERA O SITE TIRAR TODAS A S AUTOS CONFIGURACOES DO HTML*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    outline: none;
+    border: none;
+    line-height: 1;
+    appearance: none;
+}
+body,html {
+    background-color: var(--color-black);
+    
+}

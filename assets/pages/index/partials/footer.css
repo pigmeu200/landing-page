@@ -1,0 +1,16 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--color-blue);
+    padding: 20px 30px;
+    color: aliceblue;
+}
+
+footer p {
+    font-family: var(--bold);
+    font-size: clamp(0.8rem);
+    color: var(--color-white);
+    text-align: center;
+}
